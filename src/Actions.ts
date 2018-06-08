@@ -19,6 +19,8 @@ export type OutputActions = {
 }
 
 export namespace ActionCreators {
+    export const unlockPointer = () => ({ type: "@pointerLock/UNLOCK_POINTER" })
+
     export const lockPointer = () => ({ type: "@pointerLock/LOCK_POINTER" })
 
     export const setSensitivity = (sensitivity: number) => ({
