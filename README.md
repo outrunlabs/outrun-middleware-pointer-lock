@@ -1,2 +1,3 @@
-# outrun-middleware-pointer-lock
-Middleware to manage pointer lock in the browser
+# outrun-middleware-pointerlock
+
+[![Build Status](https://travis-ci.org/outrunlabs/outrun-middleware-pointerlock.svg?branch=master)](https://travis-ci.org/outrunlabs/outrun-middleware-pointerlock) [![codecov](https://codecov.io/gh/outrunlabs/outrun-middleware-pointerlock/branch/master/graph/badge.svg)](https://codecov.io/gh/outrunlabs/outrun-middleware-pointerlock) [![npm](https://img.shields.io/npm/v/outrun-middleware-pointerlock.svg)](https://www.npmjs.com/package/outrun-middleware-pointerlock) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)

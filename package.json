@@ -1,0 +1,41 @@
+{
+    "name": "outrun-middleware-pointerlock",
+    "version": "0.0.1",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "precommit": "pretty-quick --staged",
+        "build": "tsc",
+        "test": "jest --coverage",
+        "coverage": "codecov"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    },
+    "author": "Outrun Labs",
+    "license": "GPL",
+    "dependencies": {
+        "outrun-game-core": "^0.0.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^22.2.3",
+        "@types/node": "^10.0.3",
+        "husky": "^0.14.3",
+        "jest": "^22.4.4",
+        "prettier": "^1.13.4",
+        "pretty-quick": "^1.6.0",
+        "ts-jest": "^22.4.6",
+        "typescript": "^2.8.3"
+    }
+}
