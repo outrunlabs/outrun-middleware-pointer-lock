@@ -1,6 +1,7 @@
 import { Game } from "outrun-game-core"
 
 import { DefaultPointerLockState, reducer } from "./State"
+import { ActionCreators } from "./Actions"
 import { InternalActionCreators } from "./InternalActions"
 
 export * from "./Actions"
@@ -40,6 +41,12 @@ export const activate = (game: Game): void => {
             document.removeEventListener("mousemove", updateMousePosition, false)
         }
     })
+
+    window.onkeydown = keyEvent => {
+        if (keyEvent.key === "Escape") {
+            game.dispatch(ActionCreators.unlockPointer())
+        }
+    }
 
     document.body.addEventListener("click", () => {
         document.body.requestPointerLock()
